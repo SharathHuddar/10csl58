@@ -66,7 +66,7 @@ class RRB
 							i=b;
 							break;
 						}
-			//	}
+				}
 			}
 			cout<<"\naverage wait time = "<<awt/n;
 			cout<<"\naverage turn around time ="<<atat/n<<endl;
@@ -130,5 +130,5 @@ int main()
 	cout <<"\n---------------RoundRobin Schedule Algorithm------\n";
 	RRB y(p,n);
 	y.compute();
-	printf("\n");
+	cout <<"\n";
 }
