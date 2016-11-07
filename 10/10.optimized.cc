@@ -133,5 +133,5 @@ int main()
 	cout <<"\n---------------RoundRobin Schedule Algorithm------\n";
 	RRB y(p,n);
 	y.compute();
-	printf("\n");
+	cout <<"\n";
 }
