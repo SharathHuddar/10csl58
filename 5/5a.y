@@ -21,7 +21,7 @@ e	:	e'+'e	{
 	|	e'/'e	{
 				if($3==0)
 				{
-					printf("Division by 0 error");
+					printf("Division by 0 error\n");
 					exit(0);
 				}
 				$$=$1/$3;
@@ -40,6 +40,5 @@ main()
 }
 yyerror()
 {
-	printf("Error");
-	exit(0);
+	printf("Error\n");
 }

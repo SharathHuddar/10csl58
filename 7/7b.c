@@ -11,7 +11,7 @@ int main()
 		do
 		{
 			printf("Enter command: ");
-			gets(cmd);
+			scanf("%s", cmd);
 			system(cmd);
 			printf("Enter 1 to continue, 0 to exit: ");
 			scanf("%d",&ch);

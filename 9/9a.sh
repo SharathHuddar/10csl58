@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "#!/bin/bash"
 for i in $*
-do 
+do
 	echo "echo $i is created"
 	echo "cat>$i<<EOF"
 	cat $i

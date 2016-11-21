@@ -23,5 +23,4 @@ main()
 yyerror()
 {
 	printf("Error\n");
-	exit(0);
 }

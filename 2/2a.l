@@ -5,7 +5,7 @@ int opr=0,op=0,sq=0,cb=0,fb=0;
 %%
 [A-Za-z0-9]+	{
 			opr++;
-			printf("Operhand=%s\n",yytext);
+			printf("Operand=%s\n",yytext);
 		}
 [-+/*%]		{
 			op++;
@@ -23,9 +23,9 @@ main()
 {
 	printf("\nInput a valid arithematic expression\n");
 	yylex();
-	if(!cb&&!fb&&!sq&&(op==(opr-1)))
+	if(!cb&&!fb&&!sq&&(op==(opr-1))) //All flags for brackets must be 0 and the number of operators must be one less than the number of operands
 		printf("Valid expression\n");
 	else
 		printf("Invalid expression\n");
-	printf("Operator=%d\nOperhand=%d\n",op,opr);
+	printf("Operator=%d\nOperand=%d\n",op,opr);
 }

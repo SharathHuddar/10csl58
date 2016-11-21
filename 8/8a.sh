@@ -8,7 +8,7 @@ ls -l $1 | cut -d" " -f1 > x
 ls -l $2 | cut -d" " -f1 > y
 cmp -s x y
 if [ $? -eq 0 ]
-then 
+then
 	echo "Same Permission"
 	echo "Permission: `cat x`"
 elif [ $? -eq 1 ]
@@ -20,4 +20,3 @@ else
 	echo "Something went wrong"
 fi
 rm x y
-
